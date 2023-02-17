@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/ex.1/form.html">Home</a>
+        <a href="/ex.1/index.html">HTML</a>
+      </nav>
+    </header>
+    <main>
+
+      <form method="POST" action="http://localhost:3000/profile">
+        <div class="firstName">
+          <label for="firstName">firstName</label> <!-- "for=" is connceted to the input</a> -->
+          <input type="firstName">
+        </div>
+
+        <div class="lastName"></div>
+          <label for="lastName">lastName</label>
+          <input type="lastName">
+        </div><br>
+
+        <div class="radio">
+          <label for="radioButton">radio button</label>
+          <input type="radio" name="radioButton" value="radioButton"> <!-- "radio" button only lets you choose one option eg: like in survys -->
+      </div><br>
+
+      <div class="checkboxBtn">
+        <label for="checkBoxBtn">Checkbox</label>
+        <input type="checkbox" name="checkBoxBtn" value="v">
+      </div><br>
+
+      <label for="fruitSalad">Fruit Salad</label>
+        <select name="fruitSalad" id="fruitSalad">
+          <option value="cherry">cherry</option>
+          <option value="banana">banana</option>
+        </select>
+        <button type="submit">Submit form</button>
+
+        
+      </form>
+       
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
