@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --french-gray: #acadbcff;
+            --cool-gray: #9b9eceff;
+            --slate-blue: #6665ddff;
+            --palatinate-blue: #473bf0ff;
+            --black: #000500ff;  
+        }    
+        
+        * { margin: 0; }
+        body { font-size: 16px; font-family: 'Caveat', cursive; text-align: center; }
+        header { background: var(--slate-blue); padding: 1em; }
+        main { background: var( --cool-gray); }
+        section { padding: 2em; }
+        footer { padding: 1em; background: var(--black)}
+
+        header h1 { color: var(--palatinate-blue); }
+
+        #section1 { background: var(--cool-gray); }
+        #section2 { background: var(--palatinate-blue); }
+
+        a.button { background: var(--slate-blue); color: var(--prussian-blue); text-transform: uppercase; padding: 0.5em 2em; display: inline-block; text-decoration: none; font-weight: bold; }
+
+        .colums {
+            display: flex;
+        }
+
+        .colums .colum {
+            width: calc();
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Main Heading</h1>
+    </header>
+
+    <main>
+
+        <section id="section1">
+            <h2>Heading #2</h2>
+            <p>this section uses an ash gray background colour taken from a variable</p>
+            <div><a class="button" href="#">Example Button</a></div>
+        </section>
+
+        <section id="section2">
+            <h2>Heading #3</h2>
+            <p>this section uses a light orange background colour taken from a variable</p>
+        </section>
+
+        <section id="section3">
+            <h2>Heading #4</h2>
+            <p>this section has no background colour of its own</p>
+            <div class="colums">
+                <div class="colum">coloums1</div>
+                <div class="colum">coloums1</div>
+                <div class="colum">coloums1</div>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <h5>Footer</h5>
+    </footer>
+</body>
+</html>
