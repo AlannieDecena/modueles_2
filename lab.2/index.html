@@ -72,7 +72,7 @@
         position: absolute;
         top: 10px;
         right: 5px;
-        z-index: 1px;
+        z-index: 2;
       }
 
       .position-relative {
@@ -84,12 +84,15 @@
       }
 
       .position-sticky {
+        background-color: palevioletred ;
         position: sticky;
+        top: 5px;
+        bottom: 5px;
       }
 
       /* observation: both relative and absolute didnt make any changes unless i add top, bottom, left and right and give it a value.
       
-      the position absolutle will look for parant that has postion relative in it if not it defaults to the body */
+      -the position absolutle will look for parant that has postion relative in it if not it defaults to the body */
 
       /* IV. Styling text */
 
