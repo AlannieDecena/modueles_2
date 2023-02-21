@@ -5,26 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <style>
         body {
             margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            background-color: rgb(214, 201, 227);
         }
+
+        h1{
+            color: blueviolet;
+            font-size: 30px;
+            font-weight: 700px;
+            margin-top: 50px;
+            
+        }
+         h3 {
+            color: blueviolet;
+            border-bottom: 1px solid blueviolet;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            color: blueviolet;
+        }
+
         aside {
-            width: 40%;
-            height: 100%;
+            width: 39%;
+            height: 1000px;
             float: left;
-            background-color: blueviolet;
+            border-right: 1px solid blueviolet;
         }
         section {
             width: 60%;
-            height: 100%;
+            height: 1000px;
             float: right;
-            background-color: antiquewhite;
+            
+
         }
+
+        .name {
+            text-align: center;
+            line-height: 5px;
+            margin-bottom: 50px;
+            color: antiquewhite;
+        
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(213, 193, 232);
+        }
+
+        .profile {
+            color: aliceblue;
+            padding-left: 10px;
+            
+            
+        }
+        
+        .fa-regular {
+            width: 50px;
+            height: 50px;
+            
+        }
+
+        .contact {
+            margin-top: 50px;
+            padding-left: 10px;
+        }
+        
+        .aboutme {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 700px){
+            body {}
+            h1{font-size: 20px;}
+            p {font-size: 12px;}
+            aside {flex-direction: row;}
+        }
+
     </style>
 </head>
 <body>
     <aside>
+        <div class="box"></div>
         <div class="name">
             <h1>Alannie Decena</h1>
             <p>Designer & Web Developer</p>
@@ -32,9 +107,9 @@
 
         <div class="profile">
             <h3>Profile</h3>
-            <p>26/03-/1998</p>
+            <p><i class="fa-regular fa-cake-candles"></i>26/03/1998</p>
             <p>female</p>
-            <p>Auckland. NZ</p>
+            <p>Auckland, NZ</p>
         </div>
 
         <div class="contact">
