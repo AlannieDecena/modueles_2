@@ -14,6 +14,7 @@
             margin: 0;
             font-family: 'DM Sans', sans-serif;
             background-color: rgb(214, 201, 227);
+            
         }
 
         h1{
@@ -23,7 +24,7 @@
             margin-top: 50px;
             
         }
-         h3 {
+         h2, h3 {
             color: blueviolet;
             border-bottom: 1px solid blueviolet;
             margin-right: 10px;
@@ -44,6 +45,7 @@
             width: 60%;
             height: 1000px;
             float: right;
+            padding-top: 50px;
             
 
         }
@@ -62,7 +64,7 @@
             border-radius: 50%;
             margin: auto;
             margin-top: 50px;
-            background-color: rgb(213, 193, 232);
+            background-color: rgb(183, 130, 232);
         }
 
         .profile {
@@ -72,27 +74,30 @@
             
         }
         
-        .fa-regular {
-            width: 50px;
-            height: 50px;
-            
-        }
 
         .contact {
             margin-top: 50px;
             padding-left: 10px;
         }
         
-        .aboutme {
+        .aboutme, .experiences, .education {
             margin-top: 100px;
             text-align: center;
         }
+        
+        .fa-solid {
+            width: 200px; 
+            height: 200px;
+
+        }
+        
 
         @media screen and (max-width: 700px){
-            body {}
-            h1{font-size: 20px;}
+            body {display: flex; flex-direction: column; justify-content: center;}
+            h1{font-size: 30px;}
             p {font-size: 12px;}
-            aside {flex-direction: row;}
+            aside {width: 100%;}
+            section {width: 100%;}
         }
 
     </style>
@@ -107,8 +112,8 @@
 
         <div class="profile">
             <h3>Profile</h3>
-            <p><i class="fa-regular fa-cake-candles"></i>26/03/1998</p>
-            <p>female</p>
+            <p><i class="fa-solid fa-cake-candles"></i>26/03/1998</p>
+            <p></i>female</p>
             <p>Auckland, NZ</p>
         </div>
 
@@ -121,7 +126,7 @@
 
     <section>
         <div class="aboutme">
-            <h3>About Me</h3>
+            <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vitae fugit et accusantium inventore nemo at magnam! Ratione sequi culpa, 
                 delectus odit vitae iure minus, eaque impedit corporis l
@@ -129,7 +134,19 @@
         </div>
 
         <div class="experiences">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vitae fugit et accusantium inventore nemo at magnam! Ratione sequi culpa, 
+                delectus odit vitae iure minus, eaque impedit corporis l
+                aboriosam animi voluptas.</p>
+        </div>
 
+        <div class="education">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vitae fugit et accusantium inventore nemo at magnam! Ratione sequi culpa, 
+                delectus odit vitae iure minus, eaque impedit corporis l
+                aboriosam animi voluptas.</p>
         </div>
     </section>
 </body>
